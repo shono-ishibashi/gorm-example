@@ -1,0 +1,656 @@
+2021/04/21 08:42:06 main.go:15: test
+2021/04/21 08:42:24 main.go:15: test
+2021/04/21 08:52:12 main.go:16: test
+2021/04/21 09:07:06 main.go:16: test
+2021/04/21 09:13:30 main.go:10: test
+2021/04/21 09:31:52 main.go:10: test
+2021/04/21 09:48:52 main.go:10: test
+2021/04/21 09:49:05 main.go:10: test
+2021/04/21 09:49:29 main.go:10: test
+2021/04/21 09:52:33 main.go:10: test
+2021/04/21 10:09:00 main.go:10: test
+2021/04/21 10:09:00 todos.go:20: table todos has no column named content
+2021/04/21 10:09:50 main.go:10: test
+2021/04/21 10:09:50 todos.go:20: table todos has no column named content
+2021/04/21 10:11:35 main.go:10: test
+2021/04/21 10:30:27 todos.go:60: sql: expected 4 destination arguments in Scan, not 3
+2021/04/21 10:30:34 todos.go:60: sql: expected 4 destination arguments in Scan, not 3
+2021/04/21 10:55:57 todos.go:99: near "=": syntax error
+2021/04/21 10:58:46 todos.go:99: near "=": syntax error
+2021/04/21 10:58:51 todos.go:99: near "=": syntax error
+2021/04/21 10:59:15 todos.go:99: near "=": syntax error
+2021/04/21 10:59:20 todos.go:99: near "=": syntax error
+2021/04/21 10:59:41 todos.go:99: near "=": syntax error
+2021/04/21 11:04:35 todos.go:99: not enough args to execute query: want 3 got 2
+2021/05/02 03:01:47 server.go:3095: http: panic serving [::1]:51742: runtime error: invalid memory address or nil pointer dereference
+goroutine 6 [running]:
+net/http.(*conn).serve.func1(0xc0000a6e60)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44ab5e0, 0x476fe00)
+	/usr/local/Cellar/go/1.15/libexec/src/runtime/panic.go:975 +0x3e9
+database/sql.(*DB).conn(0x0, 0x45764e0, 0xc0000180d0, 0xc000062901, 0xc00010e024, 0x1, 0xa)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1190 +0x41
+database/sql.(*DB).query(0x0, 0x45764e0, 0xc0000180d0, 0x4511f2c, 0x31, 0x0, 0x0, 0x0, 0x1, 0xc000098ea8, ...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1616 +0x66
+database/sql.(*DB).QueryContext(0x0, 0x45764e0, 0xc0000180d0, 0x4511f2c, 0x31, 0x0, 0x0, 0x0, 0x1, 0x0, ...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1598 +0xd1
+database/sql.(*DB).Query(...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1612
+todo_app/models.GetTodos(0x800, 0xc000136000, 0xc000062c10, 0x0, 0x456efc0)
+	/Users/shono/go/src/todo_app/models/todos.go:47 +0x85
+todo_app/controllers.top(0x45759e0, 0xc000132000, 0xc00011a000)
+	/Users/shono/go/src/todo_app/controllers/route_main.go:10 +0x34
+net/http.HandlerFunc.ServeHTTP(0x451db20, 0x45759e0, 0xc000132000, 0xc00011a000)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x477f280, 0x45759e0, 0xc000132000, 0xc00011a000)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0000f2000, 0x45759e0, 0xc000132000, 0xc00011a000)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000a6e60, 0x45764a0, 0xc000112000)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2969 +0x36c
+2021/05/02 03:01:47 server.go:3095: http: panic serving [::1]:51743: runtime error: invalid memory address or nil pointer dereference
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0xc0000a6f00)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44ab5e0, 0x476fe00)
+	/usr/local/Cellar/go/1.15/libexec/src/runtime/panic.go:975 +0x3e9
+database/sql.(*DB).conn(0x0, 0x45764e0, 0xc0000180d0, 0xc0000df901, 0xc00010e0f4, 0x1, 0xa)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1190 +0x41
+database/sql.(*DB).query(0x0, 0x45764e0, 0xc0000180d0, 0x4511f2c, 0x31, 0x0, 0x0, 0x0, 0x1, 0xc000098ea8, ...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1616 +0x66
+database/sql.(*DB).QueryContext(0x0, 0x45764e0, 0xc0000180d0, 0x4511f2c, 0x31, 0x0, 0x0, 0x0, 0x1, 0x0, ...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1598 +0xd1
+database/sql.(*DB).Query(...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1612
+todo_app/models.GetTodos(0x800, 0xc00014e000, 0xc0000dfc10, 0x0, 0x456efc0)
+	/Users/shono/go/src/todo_app/models/todos.go:47 +0x85
+todo_app/controllers.top(0x45759e0, 0xc0001320e0, 0xc0000e2100)
+	/Users/shono/go/src/todo_app/controllers/route_main.go:10 +0x34
+net/http.HandlerFunc.ServeHTTP(0x451db20, 0x45759e0, 0xc0001320e0, 0xc0000e2100)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x477f280, 0x45759e0, 0xc0001320e0, 0xc0000e2100)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0000f2000, 0x45759e0, 0xc0001320e0, 0xc0000e2100)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000a6f00, 0x45764a0, 0xc00007c380)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2969 +0x36c
+2021/05/02 03:01:47 server.go:3095: http: panic serving [::1]:51744: runtime error: invalid memory address or nil pointer dereference
+goroutine 8 [running]:
+net/http.(*conn).serve.func1(0xc0000a6fa0)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44ab5e0, 0x476fe00)
+	/usr/local/Cellar/go/1.15/libexec/src/runtime/panic.go:975 +0x3e9
+database/sql.(*DB).conn(0x0, 0x45764e0, 0xc0000180d0, 0xc000067901, 0xc0000184c4, 0x1, 0xa)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1190 +0x41
+database/sql.(*DB).query(0x0, 0x45764e0, 0xc0000180d0, 0x4511f2c, 0x31, 0x0, 0x0, 0x0, 0x1, 0xc000098ea8, ...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1616 +0x66
+database/sql.(*DB).QueryContext(0x0, 0x45764e0, 0xc0000180d0, 0x4511f2c, 0x31, 0x0, 0x0, 0x0, 0x1, 0x0, ...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1598 +0xd1
+database/sql.(*DB).Query(...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1612
+todo_app/models.GetTodos(0x800, 0xc0000fa000, 0xc000067c10, 0x0, 0x456efc0)
+	/Users/shono/go/src/todo_app/models/todos.go:47 +0x85
+todo_app/controllers.top(0x45759e0, 0xc0000f20e0, 0xc0000e2200)
+	/Users/shono/go/src/todo_app/controllers/route_main.go:10 +0x34
+net/http.HandlerFunc.ServeHTTP(0x451db20, 0x45759e0, 0xc0000f20e0, 0xc0000e2200)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x477f280, 0x45759e0, 0xc0000f20e0, 0xc0000e2200)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0000f2000, 0x45759e0, 0xc0000f20e0, 0xc0000e2200)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000a6fa0, 0x45764a0, 0xc00007c440)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2969 +0x36c
+2021/05/02 03:01:48 server.go:3095: http: panic serving [::1]:51745: runtime error: invalid memory address or nil pointer dereference
+goroutine 34 [running]:
+net/http.(*conn).serve.func1(0xc000198000)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44ab5e0, 0x476fe00)
+	/usr/local/Cellar/go/1.15/libexec/src/runtime/panic.go:975 +0x3e9
+database/sql.(*DB).conn(0x0, 0x45764e0, 0xc0000180d0, 0xc000067901, 0xc0001ac024, 0x1, 0xa)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1190 +0x41
+database/sql.(*DB).query(0x0, 0x45764e0, 0xc0000180d0, 0x4511f2c, 0x31, 0x0, 0x0, 0x0, 0x1, 0xc000098ea8, ...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1616 +0x66
+database/sql.(*DB).QueryContext(0x0, 0x45764e0, 0xc0000180d0, 0x4511f2c, 0x31, 0x0, 0x0, 0x0, 0x1, 0x0, ...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1598 +0xd1
+database/sql.(*DB).Query(...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1612
+todo_app/models.GetTodos(0x800, 0xc0001cc000, 0xc000067c10, 0x0, 0x456efc0)
+	/Users/shono/go/src/todo_app/models/todos.go:47 +0x85
+todo_app/controllers.top(0x45759e0, 0xc0001ba0e0, 0xc0000e2300)
+	/Users/shono/go/src/todo_app/controllers/route_main.go:10 +0x34
+net/http.HandlerFunc.ServeHTTP(0x451db20, 0x45759e0, 0xc0001ba0e0, 0xc0000e2300)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x477f280, 0x45759e0, 0xc0001ba0e0, 0xc0000e2300)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0000f2000, 0x45759e0, 0xc0001ba0e0, 0xc0000e2300)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc000198000, 0x45764a0, 0xc00007c540)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2969 +0x36c
+2021/05/02 03:01:48 server.go:3095: http: panic serving [::1]:51746: runtime error: invalid memory address or nil pointer dereference
+goroutine 35 [running]:
+net/http.(*conn).serve.func1(0xc0001980a0)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44ab5e0, 0x476fe00)
+	/usr/local/Cellar/go/1.15/libexec/src/runtime/panic.go:975 +0x3e9
+database/sql.(*DB).conn(0x0, 0x45764e0, 0xc0000180d0, 0xc0001a8901, 0xc00010e1a4, 0x1, 0xa)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1190 +0x41
+database/sql.(*DB).query(0x0, 0x45764e0, 0xc0000180d0, 0x4511f2c, 0x31, 0x0, 0x0, 0x0, 0x1, 0xc000098ea8, ...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1616 +0x66
+database/sql.(*DB).QueryContext(0x0, 0x45764e0, 0xc0000180d0, 0x4511f2c, 0x31, 0x0, 0x0, 0x0, 0x1, 0x0, ...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1598 +0xd1
+database/sql.(*DB).Query(...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1612
+todo_app/models.GetTodos(0x800, 0xc00014f000, 0xc0001a8c10, 0x0, 0x456efc0)
+	/Users/shono/go/src/todo_app/models/todos.go:47 +0x85
+todo_app/controllers.top(0x45759e0, 0xc0001322a0, 0xc0001b6000)
+	/Users/shono/go/src/todo_app/controllers/route_main.go:10 +0x34
+net/http.HandlerFunc.ServeHTTP(0x451db20, 0x45759e0, 0xc0001322a0, 0xc0001b6000)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x477f280, 0x45759e0, 0xc0001322a0, 0xc0001b6000)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0000f2000, 0x45759e0, 0xc0001322a0, 0xc0001b6000)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0001980a0, 0x45764a0, 0xc0001ae000)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2969 +0x36c
+2021/05/02 03:01:48 server.go:3095: http: panic serving [::1]:51747: runtime error: invalid memory address or nil pointer dereference
+goroutine 10 [running]:
+net/http.(*conn).serve.func1(0xc0000a7040)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44ab5e0, 0x476fe00)
+	/usr/local/Cellar/go/1.15/libexec/src/runtime/panic.go:975 +0x3e9
+database/sql.(*DB).conn(0x0, 0x45764e0, 0xc0000180d0, 0xc000068901, 0xc0000185a4, 0x1, 0xa)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1190 +0x41
+database/sql.(*DB).query(0x0, 0x45764e0, 0xc0000180d0, 0x4511f2c, 0x31, 0x0, 0x0, 0x0, 0x1, 0xc000098ea8, ...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1616 +0x66
+database/sql.(*DB).QueryContext(0x0, 0x45764e0, 0xc0000180d0, 0x4511f2c, 0x31, 0x0, 0x0, 0x0, 0x1, 0x0, ...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1598 +0xd1
+database/sql.(*DB).Query(...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1612
+todo_app/models.GetTodos(0x800, 0xc0000fb800, 0xc000068c10, 0x0, 0x456efc0)
+	/Users/shono/go/src/todo_app/models/todos.go:47 +0x85
+todo_app/controllers.top(0x45759e0, 0xc0000f22a0, 0xc0000e2400)
+	/Users/shono/go/src/todo_app/controllers/route_main.go:10 +0x34
+net/http.HandlerFunc.ServeHTTP(0x451db20, 0x45759e0, 0xc0000f22a0, 0xc0000e2400)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x477f280, 0x45759e0, 0xc0000f22a0, 0xc0000e2400)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0000f2000, 0x45759e0, 0xc0000f22a0, 0xc0000e2400)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000a7040, 0x45764a0, 0xc00007c5c0)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2969 +0x36c
+2021/05/02 03:03:34 server.go:3095: http: panic serving [::1]:51844: runtime error: invalid memory address or nil pointer dereference
+goroutine 19 [running]:
+net/http.(*conn).serve.func1(0xc0001a6e60)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44ab600, 0x476fe00)
+	/usr/local/Cellar/go/1.15/libexec/src/runtime/panic.go:975 +0x3e9
+database/sql.(*DB).conn(0x0, 0x45764e0, 0xc00019e008, 0xc000092901, 0xc000096024, 0x1, 0xa)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1190 +0x41
+database/sql.(*DB).query(0x0, 0x45764e0, 0xc00019e008, 0x4511f4c, 0x31, 0x0, 0x0, 0x0, 0x1, 0xc000187048, ...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1616 +0x66
+database/sql.(*DB).QueryContext(0x0, 0x45764e0, 0xc00019e008, 0x4511f4c, 0x31, 0x0, 0x0, 0x0, 0x1, 0x0, ...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1598 +0xd1
+database/sql.(*DB).Query(...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1612
+todo_app/models.GetTodos(0x800, 0xc0000be000, 0xc000092c10, 0x0, 0x456f000)
+	/Users/shono/go/src/todo_app/models/todos.go:47 +0x85
+todo_app/controllers.top(0x45759e0, 0xc0000ba000, 0xc0000a2000)
+	/Users/shono/go/src/todo_app/controllers/route_main.go:10 +0x34
+net/http.HandlerFunc.ServeHTTP(0x451db40, 0x45759e0, 0xc0000ba000, 0xc0000a2000)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x477f280, 0x45759e0, 0xc0000ba000, 0xc0000a2000)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001f2000, 0x45759e0, 0xc0000ba000, 0xc0000a2000)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0001a6e60, 0x45764a0, 0xc00009a000)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2969 +0x36c
+2021/05/02 03:03:34 server.go:3095: http: panic serving [::1]:51845: runtime error: invalid memory address or nil pointer dereference
+goroutine 20 [running]:
+net/http.(*conn).serve.func1(0xc0001a6f00)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44ab600, 0x476fe00)
+	/usr/local/Cellar/go/1.15/libexec/src/runtime/panic.go:975 +0x3e9
+database/sql.(*DB).conn(0x0, 0x45764e0, 0xc00019e008, 0xc0001eb901, 0xc00019e3a4, 0x1, 0xa)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1190 +0x41
+database/sql.(*DB).query(0x0, 0x45764e0, 0xc00019e008, 0x4511f4c, 0x31, 0x0, 0x0, 0x0, 0x1, 0xc000187048, ...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1616 +0x66
+database/sql.(*DB).QueryContext(0x0, 0x45764e0, 0xc00019e008, 0x4511f4c, 0x31, 0x0, 0x0, 0x0, 0x1, 0x0, ...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1598 +0xd1
+database/sql.(*DB).Query(...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1612
+todo_app/models.GetTodos(0x800, 0xc000202000, 0xc0001ebc10, 0x0, 0x456f000)
+	/Users/shono/go/src/todo_app/models/todos.go:47 +0x85
+todo_app/controllers.top(0x45759e0, 0xc0001f20e0, 0xc0001ec100)
+	/Users/shono/go/src/todo_app/controllers/route_main.go:10 +0x34
+net/http.HandlerFunc.ServeHTTP(0x451db40, 0x45759e0, 0xc0001f20e0, 0xc0001ec100)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x477f280, 0x45759e0, 0xc0001f20e0, 0xc0001ec100)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001f2000, 0x45759e0, 0xc0001f20e0, 0xc0001ec100)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0001a6f00, 0x45764a0, 0xc0001b8340)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2969 +0x36c
+2021/05/02 03:03:34 server.go:3095: http: panic serving [::1]:51846: runtime error: invalid memory address or nil pointer dereference
+goroutine 5 [running]:
+net/http.(*conn).serve.func1(0xc000116000)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44ab600, 0x476fe00)
+	/usr/local/Cellar/go/1.15/libexec/src/runtime/panic.go:975 +0x3e9
+database/sql.(*DB).conn(0x0, 0x45764e0, 0xc00019e008, 0xc000067901, 0xc0000180c4, 0x1, 0xa)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1190 +0x41
+database/sql.(*DB).query(0x0, 0x45764e0, 0xc00019e008, 0x4511f4c, 0x31, 0x0, 0x0, 0x0, 0x1, 0xc000187048, ...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1616 +0x66
+database/sql.(*DB).QueryContext(0x0, 0x45764e0, 0xc00019e008, 0x4511f4c, 0x31, 0x0, 0x0, 0x0, 0x1, 0x0, ...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1598 +0xd1
+database/sql.(*DB).Query(...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1612
+todo_app/models.GetTodos(0x800, 0xc000126000, 0xc000067c10, 0x0, 0x456f000)
+	/Users/shono/go/src/todo_app/models/todos.go:47 +0x85
+todo_app/controllers.top(0x45759e0, 0xc000124000, 0xc00011a000)
+	/Users/shono/go/src/todo_app/controllers/route_main.go:10 +0x34
+net/http.HandlerFunc.ServeHTTP(0x451db40, 0x45759e0, 0xc000124000, 0xc00011a000)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x477f280, 0x45759e0, 0xc000124000, 0xc00011a000)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001f2000, 0x45759e0, 0xc000124000, 0xc00011a000)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc000116000, 0x45764a0, 0xc00007c040)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2969 +0x36c
+2021/05/02 03:03:35 server.go:3095: http: panic serving [::1]:51848: runtime error: invalid memory address or nil pointer dereference
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0xc0001160a0)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44ab600, 0x476fe00)
+	/usr/local/Cellar/go/1.15/libexec/src/runtime/panic.go:975 +0x3e9
+database/sql.(*DB).conn(0x0, 0x45764e0, 0xc00019e008, 0xc000062901, 0xc000018194, 0x1, 0xa)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1190 +0x41
+database/sql.(*DB).query(0x0, 0x45764e0, 0xc00019e008, 0x4511f4c, 0x31, 0x0, 0x0, 0x0, 0x1, 0xc000187048, ...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1616 +0x66
+database/sql.(*DB).QueryContext(0x0, 0x45764e0, 0xc00019e008, 0x4511f4c, 0x31, 0x0, 0x0, 0x0, 0x1, 0x0, ...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1598 +0xd1
+database/sql.(*DB).Query(...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1612
+todo_app/models.GetTodos(0x800, 0xc000127800, 0xc000062c10, 0x0, 0x456f000)
+	/Users/shono/go/src/todo_app/models/todos.go:47 +0x85
+todo_app/controllers.top(0x45759e0, 0xc0001241c0, 0xc0001ec200)
+	/Users/shono/go/src/todo_app/controllers/route_main.go:10 +0x34
+net/http.HandlerFunc.ServeHTTP(0x451db40, 0x45759e0, 0xc0001241c0, 0xc0001ec200)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x477f280, 0x45759e0, 0xc0001241c0, 0xc0001ec200)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001f2000, 0x45759e0, 0xc0001241c0, 0xc0001ec200)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0001160a0, 0x45764a0, 0xc0001b8480)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2969 +0x36c
+2021/05/02 03:03:35 server.go:3095: http: panic serving [::1]:51849: runtime error: invalid memory address or nil pointer dereference
+goroutine 8 [running]:
+net/http.(*conn).serve.func1(0xc000116140)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44ab600, 0x476fe00)
+	/usr/local/Cellar/go/1.15/libexec/src/runtime/panic.go:975 +0x3e9
+database/sql.(*DB).conn(0x0, 0x45764e0, 0xc00019e008, 0xc000067901, 0xc000096124, 0x1, 0xa)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1190 +0x41
+database/sql.(*DB).query(0x0, 0x45764e0, 0xc00019e008, 0x4511f4c, 0x31, 0x0, 0x0, 0x0, 0x1, 0xc000187048, ...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1616 +0x66
+database/sql.(*DB).QueryContext(0x0, 0x45764e0, 0xc00019e008, 0x4511f4c, 0x31, 0x0, 0x0, 0x0, 0x1, 0x0, ...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1598 +0xd1
+database/sql.(*DB).Query(...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1612
+todo_app/models.GetTodos(0x800, 0xc0000e6000, 0xc000067c10, 0x0, 0x456f000)
+	/Users/shono/go/src/todo_app/models/todos.go:47 +0x85
+todo_app/controllers.top(0x45759e0, 0xc0000ba1c0, 0xc00011a100)
+	/Users/shono/go/src/todo_app/controllers/route_main.go:10 +0x34
+net/http.HandlerFunc.ServeHTTP(0x451db40, 0x45759e0, 0xc0000ba1c0, 0xc00011a100)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x477f280, 0x45759e0, 0xc0000ba1c0, 0xc00011a100)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001f2000, 0x45759e0, 0xc0000ba1c0, 0xc00011a100)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc000116140, 0x45764a0, 0xc00007c180)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2969 +0x36c
+2021/05/02 03:03:35 server.go:3095: http: panic serving [::1]:51850: runtime error: invalid memory address or nil pointer dereference
+goroutine 36 [running]:
+net/http.(*conn).serve.func1(0xc000282000)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44ab600, 0x476fe00)
+	/usr/local/Cellar/go/1.15/libexec/src/runtime/panic.go:975 +0x3e9
+database/sql.(*DB).conn(0x0, 0x45764e0, 0xc00019e008, 0xc000067901, 0xc000096204, 0x1, 0xa)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1190 +0x41
+database/sql.(*DB).query(0x0, 0x45764e0, 0xc00019e008, 0x4511f4c, 0x31, 0x0, 0x0, 0x0, 0x1, 0xc000187048, ...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1616 +0x66
+database/sql.(*DB).QueryContext(0x0, 0x45764e0, 0xc00019e008, 0x4511f4c, 0x31, 0x0, 0x0, 0x0, 0x1, 0x0, ...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1598 +0xd1
+database/sql.(*DB).Query(...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1612
+todo_app/models.GetTodos(0x800, 0xc0000e7000, 0xc000067c10, 0x0, 0x456f000)
+	/Users/shono/go/src/todo_app/models/todos.go:47 +0x85
+todo_app/controllers.top(0x45759e0, 0xc0000ba380, 0xc0000a2100)
+	/Users/shono/go/src/todo_app/controllers/route_main.go:10 +0x34
+net/http.HandlerFunc.ServeHTTP(0x451db40, 0x45759e0, 0xc0000ba380, 0xc0000a2100)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x477f280, 0x45759e0, 0xc0000ba380, 0xc0000a2100)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001f2000, 0x45759e0, 0xc0000ba380, 0xc0000a2100)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc000282000, 0x45764a0, 0xc00009a200)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2969 +0x36c
+2021/05/02 03:03:37 server.go:3095: http: panic serving [::1]:51851: runtime error: invalid memory address or nil pointer dereference
+goroutine 22 [running]:
+net/http.(*conn).serve.func1(0xc0001a6fa0)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44ab600, 0x476fe00)
+	/usr/local/Cellar/go/1.15/libexec/src/runtime/panic.go:975 +0x3e9
+database/sql.(*DB).conn(0x0, 0x45764e0, 0xc00019e008, 0xc000067901, 0xc00019e484, 0x1, 0xa)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1190 +0x41
+database/sql.(*DB).query(0x0, 0x45764e0, 0xc00019e008, 0x4511f4c, 0x31, 0x0, 0x0, 0x0, 0x1, 0xc000187048, ...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1616 +0x66
+database/sql.(*DB).QueryContext(0x0, 0x45764e0, 0xc00019e008, 0x4511f4c, 0x31, 0x0, 0x0, 0x0, 0x1, 0x0, ...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1598 +0xd1
+database/sql.(*DB).Query(...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1612
+todo_app/models.GetTodos(0x800, 0xc000203800, 0xc000067c10, 0x0, 0x456f000)
+	/Users/shono/go/src/todo_app/models/todos.go:47 +0x85
+todo_app/controllers.top(0x45759e0, 0xc0001f22a0, 0xc0000a2200)
+	/Users/shono/go/src/todo_app/controllers/route_main.go:10 +0x34
+net/http.HandlerFunc.ServeHTTP(0x451db40, 0x45759e0, 0xc0001f22a0, 0xc0000a2200)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x477f280, 0x45759e0, 0xc0001f22a0, 0xc0000a2200)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001f2000, 0x45759e0, 0xc0001f22a0, 0xc0000a2200)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0001a6fa0, 0x45764a0, 0xc00009a300)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2969 +0x36c
+2021/05/02 03:03:37 server.go:3095: http: panic serving [::1]:51852: runtime error: invalid memory address or nil pointer dereference
+goroutine 23 [running]:
+net/http.(*conn).serve.func1(0xc0001a7040)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44ab600, 0x476fe00)
+	/usr/local/Cellar/go/1.15/libexec/src/runtime/panic.go:975 +0x3e9
+database/sql.(*DB).conn(0x0, 0x45764e0, 0xc00019e008, 0xc000063901, 0xc000018254, 0x1, 0xa)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1190 +0x41
+database/sql.(*DB).query(0x0, 0x45764e0, 0xc00019e008, 0x4511f4c, 0x31, 0x0, 0x0, 0x0, 0x1, 0xc000187048, ...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1616 +0x66
+database/sql.(*DB).QueryContext(0x0, 0x45764e0, 0xc00019e008, 0x4511f4c, 0x31, 0x0, 0x0, 0x0, 0x1, 0x0, ...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1598 +0xd1
+database/sql.(*DB).Query(...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1612
+todo_app/models.GetTodos(0x800, 0xc000154800, 0xc000063c10, 0x0, 0x456f000)
+	/Users/shono/go/src/todo_app/models/todos.go:47 +0x85
+todo_app/controllers.top(0x45759e0, 0xc000124380, 0xc0001ec300)
+	/Users/shono/go/src/todo_app/controllers/route_main.go:10 +0x34
+net/http.HandlerFunc.ServeHTTP(0x451db40, 0x45759e0, 0xc000124380, 0xc0001ec300)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x477f280, 0x45759e0, 0xc000124380, 0xc0001ec300)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001f2000, 0x45759e0, 0xc000124380, 0xc0001ec300)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0001a7040, 0x45764a0, 0xc0001b8500)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2969 +0x36c
+2021/05/02 03:03:37 server.go:3095: http: panic serving [::1]:51853: runtime error: invalid memory address or nil pointer dereference
+goroutine 25 [running]:
+net/http.(*conn).serve.func1(0xc0001a70e0)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44ab600, 0x476fe00)
+	/usr/local/Cellar/go/1.15/libexec/src/runtime/panic.go:975 +0x3e9
+database/sql.(*DB).conn(0x0, 0x45764e0, 0xc00019e008, 0xc000067901, 0xc000018314, 0x1, 0xa)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1190 +0x41
+database/sql.(*DB).query(0x0, 0x45764e0, 0xc00019e008, 0x4511f4c, 0x31, 0x0, 0x0, 0x0, 0x1, 0xc000187048, ...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1616 +0x66
+database/sql.(*DB).QueryContext(0x0, 0x45764e0, 0xc00019e008, 0x4511f4c, 0x31, 0x0, 0x0, 0x0, 0x1, 0x0, ...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1598 +0xd1
+database/sql.(*DB).Query(...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1612
+todo_app/models.GetTodos(0x800, 0xc000155800, 0xc000067c10, 0x0, 0x456f000)
+	/Users/shono/go/src/todo_app/models/todos.go:47 +0x85
+todo_app/controllers.top(0x45759e0, 0xc000124540, 0xc0001ec400)
+	/Users/shono/go/src/todo_app/controllers/route_main.go:10 +0x34
+net/http.HandlerFunc.ServeHTTP(0x451db40, 0x45759e0, 0xc000124540, 0xc0001ec400)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x477f280, 0x45759e0, 0xc000124540, 0xc0001ec400)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001f2000, 0x45759e0, 0xc000124540, 0xc0001ec400)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0001a70e0, 0x45764a0, 0xc0001b8600)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2969 +0x36c
+2021/05/02 03:03:42 server.go:3095: http: panic serving [::1]:51858: runtime error: invalid memory address or nil pointer dereference
+goroutine 38 [running]:
+net/http.(*conn).serve.func1(0xc0002820a0)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44ab600, 0x476fe00)
+	/usr/local/Cellar/go/1.15/libexec/src/runtime/panic.go:975 +0x3e9
+database/sql.(*DB).conn(0x0, 0x45764e0, 0xc00019e008, 0xc000092901, 0xc0000183f4, 0x1, 0xa)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1190 +0x41
+database/sql.(*DB).query(0x0, 0x45764e0, 0xc00019e008, 0x4511f4c, 0x31, 0x0, 0x0, 0x0, 0x1, 0xc000187048, ...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1616 +0x66
+database/sql.(*DB).QueryContext(0x0, 0x45764e0, 0xc00019e008, 0x4511f4c, 0x31, 0x0, 0x0, 0x0, 0x1, 0x0, ...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1598 +0xd1
+database/sql.(*DB).Query(...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1612
+todo_app/models.GetTodos(0x800, 0xc000176800, 0xc000092c10, 0x0, 0x456f000)
+	/Users/shono/go/src/todo_app/models/todos.go:47 +0x85
+todo_app/controllers.top(0x45759e0, 0xc000124700, 0xc0000a2300)
+	/Users/shono/go/src/todo_app/controllers/route_main.go:10 +0x34
+net/http.HandlerFunc.ServeHTTP(0x451db40, 0x45759e0, 0xc000124700, 0xc0000a2300)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x477f280, 0x45759e0, 0xc000124700, 0xc0000a2300)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001f2000, 0x45759e0, 0xc000124700, 0xc0000a2300)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0002820a0, 0x45764a0, 0xc00009a380)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2969 +0x36c
+2021/05/02 03:03:42 server.go:3095: http: panic serving [::1]:51859: runtime error: invalid memory address or nil pointer dereference
+goroutine 12 [running]:
+net/http.(*conn).serve.func1(0xc0001161e0)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44ab600, 0x476fe00)
+	/usr/local/Cellar/go/1.15/libexec/src/runtime/panic.go:975 +0x3e9
+database/sql.(*DB).conn(0x0, 0x45764e0, 0xc00019e008, 0xc000067901, 0xc0000184b4, 0x1, 0xa)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1190 +0x41
+database/sql.(*DB).query(0x0, 0x45764e0, 0xc00019e008, 0x4511f4c, 0x31, 0x0, 0x0, 0x0, 0x1, 0xc000187048, ...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1616 +0x66
+database/sql.(*DB).QueryContext(0x0, 0x45764e0, 0xc00019e008, 0x4511f4c, 0x31, 0x0, 0x0, 0x0, 0x1, 0x0, ...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1598 +0xd1
+database/sql.(*DB).Query(...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1612
+todo_app/models.GetTodos(0x800, 0xc000177800, 0xc000067c10, 0x0, 0x456f000)
+	/Users/shono/go/src/todo_app/models/todos.go:47 +0x85
+todo_app/controllers.top(0x45759e0, 0xc0001248c0, 0xc00011a200)
+	/Users/shono/go/src/todo_app/controllers/route_main.go:10 +0x34
+net/http.HandlerFunc.ServeHTTP(0x451db40, 0x45759e0, 0xc0001248c0, 0xc00011a200)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x477f280, 0x45759e0, 0xc0001248c0, 0xc00011a200)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001f2000, 0x45759e0, 0xc0001248c0, 0xc00011a200)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0001161e0, 0x45764a0, 0xc00007c380)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2969 +0x36c
+2021/05/02 03:03:42 server.go:3095: http: panic serving [::1]:51860: runtime error: invalid memory address or nil pointer dereference
+goroutine 15 [running]:
+net/http.(*conn).serve.func1(0xc000116280)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44ab600, 0x476fe00)
+	/usr/local/Cellar/go/1.15/libexec/src/runtime/panic.go:975 +0x3e9
+database/sql.(*DB).conn(0x0, 0x45764e0, 0xc00019e008, 0xc000067901, 0xc000018594, 0x1, 0xa)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1190 +0x41
+database/sql.(*DB).query(0x0, 0x45764e0, 0xc00019e008, 0x4511f4c, 0x31, 0x0, 0x0, 0x0, 0x1, 0xc000187048, ...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1616 +0x66
+database/sql.(*DB).QueryContext(0x0, 0x45764e0, 0xc00019e008, 0x4511f4c, 0x31, 0x0, 0x0, 0x0, 0x1, 0x0, ...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1598 +0xd1
+database/sql.(*DB).Query(...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1612
+todo_app/models.GetTodos(0x800, 0xc000178800, 0xc000067c10, 0x0, 0x456f000)
+	/Users/shono/go/src/todo_app/models/todos.go:47 +0x85
+todo_app/controllers.top(0x45759e0, 0xc000124a80, 0xc00011a300)
+	/Users/shono/go/src/todo_app/controllers/route_main.go:10 +0x34
+net/http.HandlerFunc.ServeHTTP(0x451db40, 0x45759e0, 0xc000124a80, 0xc00011a300)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x477f280, 0x45759e0, 0xc000124a80, 0xc00011a300)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001f2000, 0x45759e0, 0xc000124a80, 0xc00011a300)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc000116280, 0x45764a0, 0xc00007c500)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2969 +0x36c
+2021/05/02 03:04:12 server.go:3095: http: panic serving [::1]:51877: runtime error: invalid memory address or nil pointer dereference
+goroutine 39 [running]:
+net/http.(*conn).serve.func1(0xc000282140)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44ab600, 0x476fe00)
+	/usr/local/Cellar/go/1.15/libexec/src/runtime/panic.go:975 +0x3e9
+database/sql.(*DB).conn(0x0, 0x45764e0, 0xc00019e008, 0xc000067901, 0xc000096304, 0x1, 0xa)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1190 +0x41
+database/sql.(*DB).query(0x0, 0x45764e0, 0xc00019e008, 0x4511f4c, 0x31, 0x0, 0x0, 0x0, 0x1, 0xc000187048, ...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1616 +0x66
+database/sql.(*DB).QueryContext(0x0, 0x45764e0, 0xc00019e008, 0x4511f4c, 0x31, 0x0, 0x0, 0x0, 0x1, 0x0, ...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1598 +0xd1
+database/sql.(*DB).Query(...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1612
+todo_app/models.GetTodos(0x800, 0xc000294000, 0xc000067c10, 0x0, 0x456f000)
+	/Users/shono/go/src/todo_app/models/todos.go:47 +0x85
+todo_app/controllers.top(0x45759e0, 0xc0000ba540, 0xc00011a400)
+	/Users/shono/go/src/todo_app/controllers/route_main.go:10 +0x34
+net/http.HandlerFunc.ServeHTTP(0x451db40, 0x45759e0, 0xc0000ba540, 0xc00011a400)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x477f280, 0x45759e0, 0xc0000ba540, 0xc00011a400)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001f2000, 0x45759e0, 0xc0000ba540, 0xc00011a400)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc000282140, 0x45764a0, 0xc00007c600)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2969 +0x36c
+2021/05/02 03:04:12 server.go:3095: http: panic serving [::1]:51878: runtime error: invalid memory address or nil pointer dereference
+goroutine 40 [running]:
+net/http.(*conn).serve.func1(0xc0002821e0)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44ab600, 0x476fe00)
+	/usr/local/Cellar/go/1.15/libexec/src/runtime/panic.go:975 +0x3e9
+database/sql.(*DB).conn(0x0, 0x45764e0, 0xc00019e008, 0xc000093901, 0xc00019e564, 0x1, 0xa)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1190 +0x41
+database/sql.(*DB).query(0x0, 0x45764e0, 0xc00019e008, 0x4511f4c, 0x31, 0x0, 0x0, 0x0, 0x1, 0xc000187048, ...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1616 +0x66
+database/sql.(*DB).QueryContext(0x0, 0x45764e0, 0xc00019e008, 0x4511f4c, 0x31, 0x0, 0x0, 0x0, 0x1, 0x0, ...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1598 +0xd1
+database/sql.(*DB).Query(...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1612
+todo_app/models.GetTodos(0x800, 0xc000224800, 0xc000093c10, 0x0, 0x456f000)
+	/Users/shono/go/src/todo_app/models/todos.go:47 +0x85
+todo_app/controllers.top(0x45759e0, 0xc0001f2460, 0xc0000a2400)
+	/Users/shono/go/src/todo_app/controllers/route_main.go:10 +0x34
+net/http.HandlerFunc.ServeHTTP(0x451db40, 0x45759e0, 0xc0001f2460, 0xc0000a2400)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x477f280, 0x45759e0, 0xc0001f2460, 0xc0000a2400)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001f2000, 0x45759e0, 0xc0001f2460, 0xc0000a2400)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0002821e0, 0x45764a0, 0xc00009a400)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2969 +0x36c
+2021/05/02 03:04:12 server.go:3095: http: panic serving [::1]:51879: runtime error: invalid memory address or nil pointer dereference
+goroutine 42 [running]:
+net/http.(*conn).serve.func1(0xc000282280)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44ab600, 0x476fe00)
+	/usr/local/Cellar/go/1.15/libexec/src/runtime/panic.go:975 +0x3e9
+database/sql.(*DB).conn(0x0, 0x45764e0, 0xc00019e008, 0xc000067901, 0xc0000963e4, 0x1, 0xa)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1190 +0x41
+database/sql.(*DB).query(0x0, 0x45764e0, 0xc00019e008, 0x4511f4c, 0x31, 0x0, 0x0, 0x0, 0x1, 0xc000187048, ...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1616 +0x66
+database/sql.(*DB).QueryContext(0x0, 0x45764e0, 0xc00019e008, 0x4511f4c, 0x31, 0x0, 0x0, 0x0, 0x1, 0x0, ...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1598 +0xd1
+database/sql.(*DB).Query(...)
+	/usr/local/Cellar/go/1.15/libexec/src/database/sql/sql.go:1612
+todo_app/models.GetTodos(0x800, 0xc000295000, 0xc000067c10, 0x0, 0x456f000)
+	/Users/shono/go/src/todo_app/models/todos.go:47 +0x85
+todo_app/controllers.top(0x45759e0, 0xc0000ba700, 0xc0000a2500)
+	/Users/shono/go/src/todo_app/controllers/route_main.go:10 +0x34
+net/http.HandlerFunc.ServeHTTP(0x451db40, 0x45759e0, 0xc0000ba700, 0xc0000a2500)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x477f280, 0x45759e0, 0xc0000ba700, 0xc0000a2500)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0001f2000, 0x45759e0, 0xc0000ba700, 0xc0000a2500)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc000282280, 0x45764a0, 0xc00009a500)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2969 +0x36c
+2021/05/03 00:40:38 common.go:28: sql: unknown driver "mysql" (forgotten import?)
+2021/05/03 00:41:58 common.go:30: Successfully connect database
+2021/05/03 00:44:09 server.go:3095: http: superfluous response.WriteHeader call from gorm_example/controllers.UserController (user_controller.go:31)
+2021/05/03 00:45:15 common.go:30: Successfully connect database
+2021/05/03 00:45:19 server.go:3095: http: superfluous response.WriteHeader call from gorm_example/controllers.UserController (user_controller.go:31)
+2021/05/03 00:49:12 common.go:30: Successfully connect database
+2021/05/03 00:49:16 server.go:3095: http: superfluous response.WriteHeader call from gorm_example/controllers.UserController (user_controller.go:32)
+2021/05/03 00:51:08 common.go:30: Successfully connect database
+2021/05/03 00:51:15 server.go:3095: http: superfluous response.WriteHeader call from gorm_example/controllers.UserController (user_controller.go:31)
+2021/05/03 00:52:38 server.go:3095: http: superfluous response.WriteHeader call from gorm_example/controllers.UserController (user_controller.go:31)
+2021/05/03 00:53:01 common.go:30: Successfully connect database
+2021/05/03 00:53:08 server.go:3095: http: superfluous response.WriteHeader call from gorm_example/controllers.UserController (user_controller.go:33)
+2021/05/03 00:57:12 common.go:30: Successfully connect database
+2021/05/03 00:57:16 server.go:3095: http: panic serving [::1]:63359: runtime error: invalid memory address or nil pointer dereference
+goroutine 18 [running]:
+net/http.(*conn).serve.func1(0xc00028e0a0)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:1801 +0x147
+panic(0x1450660, 0x1776640)
+	/usr/local/Cellar/go/1.15/libexec/src/runtime/panic.go:975 +0x3e9
+gorm_example/controllers.UserController(0x15425e0, 0xc0002c01c0, 0xc0002d6000)
+	/Users/shono/go/src/gorm_example/controllers/user_controller.go:25 +0x3c3
+net/http.HandlerFunc.ServeHTTP(0x14d76e8, 0x15425e0, 0xc0002c01c0, 0xc0002d6000)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1784d60, 0x15425e0, 0xc0002c01c0, 0xc0002d6000)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc0002c0000, 0x15425e0, 0xc0002c01c0, 0xc0002d6000)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc00028e0a0, 0x1543620, 0xc0002aa300)
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.15/libexec/src/net/http/server.go:2969 +0x36c
+2021/05/03 00:58:09 common.go:30: Successfully connect database
+2021/05/03 00:58:12 server.go:3095: http: superfluous response.WriteHeader call from gorm_example/controllers.UserController (user_controller.go:34)
+2021/05/03 01:02:31 common.go:30: Successfully connect database
+2021/05/03 01:15:58 common.go:30: Successfully connect database
+2021/05/03 01:16:04 server.go:3095: http: superfluous response.WriteHeader call from gorm_example/controllers.UserController (user_controller.go:30)
+2021/05/03 01:17:25 common.go:30: Successfully connect database
+2021/05/03 01:17:29 server.go:3095: http: superfluous response.WriteHeader call from gorm_example/controllers.UserController (user_controller.go:29)
+2021/05/03 01:17:50 common.go:30: Successfully connect database
+2021/05/03 01:17:54 server.go:3095: http: superfluous response.WriteHeader call from gorm_example/controllers.UserController (user_controller.go:28)
+2021/05/03 01:22:42 common.go:30: Successfully connect database
+2021/05/03 01:22:52 server.go:3095: http: superfluous response.WriteHeader call from gorm_example/controllers.UserController (user_controller.go:30)
+2021/05/03 01:24:14 common.go:30: Successfully connect database
+2021/05/03 12:41:39 common.go:30: Successfully connect database
