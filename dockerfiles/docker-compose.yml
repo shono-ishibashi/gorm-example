@@ -1,0 +1,27 @@
+version: '3'
+services:
+  go:
+    container_name: go
+    build:
+      context: ./../
+      dockerfile: ./dockerfiles/Dockerfile
+    stdin_open: true
+    tty: true
+    volumes:
+      - ../:/go/src/app
+    ports:
+      - 8080:8080
+  db:
+    image: mariadb
+    container_name: mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: test_db
+      MYSQL_USER: test_user
+      MYSQL_PASSWORD: test_password
+      TZ: 'Asia/Tokyo'
+    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    volumes:
+      - ./db/my.cnf:/etc/mysql/conf.d/my.cnf
+    ports:
+      - 3306:3306

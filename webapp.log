@@ -654,3 +654,5 @@ created by net/http.(*Server).Serve
 2021/05/03 01:22:52 server.go:3095: http: superfluous response.WriteHeader call from gorm_example/controllers.UserController (user_controller.go:30)
 2021/05/03 01:24:14 common.go:30: Successfully connect database
 2021/05/03 12:41:39 common.go:30: Successfully connect database
+2021/05/04 07:22:45 common.go:28: dial tcp 127.0.0.1:3306: connect: connection refused
+2021/05/04 07:25:58 common.go:30: Successfully connect database
